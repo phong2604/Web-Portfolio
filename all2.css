@@ -1,0 +1,232 @@
+
+/* ALL */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}   
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image:  linear-gradient(#0474b0,#5ac1f9,#b0d6f5);
+    height: 115rem;
+    overflow-x: hidden;
+
+}
+
+/*Nav bar*/
+#bNavbar{
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    
+}
+.navbar{
+    height: 50px;
+    width: 370px;
+    top: 10px;
+    border-radius: 30px;
+
+
+    z-index: 1;
+    align-content: center;
+    display: flex;
+    position: fixed;
+    background-color: #0474b0e3;
+}
+.navbar a{
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 90px;
+
+    font-size: large;
+    position: relative;
+    text-decoration: none;
+    align-items: center ;
+    justify-content: center;
+    display: flex;
+}
+.this{
+    background-color: #b0d6f528;
+    border-radius: 45px;
+}
+
+a{
+    color: #ffffff;
+}
+
+/* cloud*/
+
+
+#clouds{
+    width: 100%;
+    height: 115rem;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#clouds img{
+    width: 100rem;
+    height: auto;
+    position: absolute;
+
+}
+
+#cloud-1{
+    top: 600px;
+    transform: scale(1.5);
+}
+
+#cloud-3{
+    transform: translateZ(-0.4px) scale(0.5);
+    top: 200px;
+    left: 600px;
+}
+#cloud-4{
+    top:600px;
+    transform: rotate(180deg) scale(1.6);
+}
+#cloud-6{
+    transform: scale(2);
+    top: 100px;
+
+
+}
+
+/*back cloud*/
+#cloud-5{
+    transform: scale(1.5);
+    
+    top: 800px;
+}
+#cloud-2{
+    transform: translateZ(-2px) scale(0.8);
+    top: 400px;
+}
+
+
+#clouds h1{
+    display: block;
+    font-size: 5rem;
+
+    text-align: center;
+    margin-top: 250px;
+}
+
+/* body  */
+
+#intro{
+    width: 100%;;
+    margin: 12rem auto;
+    display: flex;
+    align-items: center;
+
+    column-count: 2 ;
+    width: 1100px;
+
+}
+
+#intro #git {
+    transition: transform 0.2s;
+}
+#intro #git:hover{
+    transform: scale(1.1);
+}
+
+#me{
+    width: 40%;
+    height: auto;
+    text-align: left;
+    margin: 3rem;
+    display: flex;
+}
+
+#text h1{
+    font-size: 4rem;
+}
+#text p{
+    line-height: 2rem;
+    font-size: larger;
+    font-weight: 1000;
+}
+span{
+    color: rgb(1, 51, 99);
+}
+
+#anotherNav{
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 350px 750px ;
+    grid-template-rows: 300px 300px ;   
+    gap: 50px;
+}
+
+
+#anotherNav img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+#anotherNav img:hover{
+    transform:translateY(-3px);
+    box-shadow: 4px 4px 4px 4px  #ffffffd0;
+}
+
+#anotherNav #c{
+    grid-row: 2/3 ;
+    grid-column: 1/3;
+}
+
+.up{
+    position: relative;
+
+
+
+
+}
+@keyframes kite {
+    0%{
+
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+
+        transform: translateX(-10px);
+    }
+}
+
+#up{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    right: 0;
+    overflow: hidden;
+
+    animation-name: kite;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite ;
+}
+
+
+
+/* @media only screen and (max-width:700px){
+    #anotherNav{
+
+    }
+} */

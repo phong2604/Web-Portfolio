@@ -1,0 +1,56 @@
+
+#info1 img{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+}
+
+body{
+    height: 100rem;
+}
+#info1{
+    width: 100%;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25rem;
+
+
+    display: grid;
+    grid-template-columns: 600px 600px;
+    gap: 70px;
+
+    font-size: x-large;
+}
+
+
+#info2 video{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+#info2 a{
+    color: black;
+}
+#info2 a:hover{
+    color: red;
+}
+#info2{
+    width: 100%;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+
+
+    display: grid;
+    grid-template-columns: 600px 500px;
+    gap: 70px;
+
+    font-size: x-large;
+}
+#clouds{
+    height: 100rem ;
+}
+

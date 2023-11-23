@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="a.css">
+    <title>BMI Calculator using JavaScript with Source Code - @code.scientist x @codingtorque</title>
+</head>
+<body>
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <!-- Further code here -->
+    <div class="container">
+        <h2 style="text-align: center;">BMI and BMR Calculator</h2>
+        <form id="form">
+            <p class="inputs">
+                <label>Age: </label>
+                <input type="number" id="age" min="15" max="80" placeholder="15-80">
+            </p>
+            <p class="inputs">
+                <label>Choose your gender: </label>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </p>
+            <p class="inputs">
+                <label>Height: </label>
+                <input type="number" id="height" min="130" max="300" placeholder="130-300 cm">
+            </p>
+            <p class="inputs">
+                <label>Weight: </label>
+                <input type="number" id="weight" min="30" max="400" placeholder="30-400 kg">
+            </p>
+            <button class="calcBtn">Calculate</button>
+            <div style="margin-top: 20px;">Your BMI is: <p id="results"></p>
+            </div>
+            <p id="message"></p>
+            <div style="margin-top: 20px;">Your BMR is: <p id="results2"></p>
+            </div>
+        </form>
+    </div>
+    
+
+    <script src="a.js"></script>
+
+</body>
+</html>
